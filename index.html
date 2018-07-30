@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>triqui</title>
+	
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<script type="text/javascript" src="logica.js"></script>
+</head>
+<body onload="nuevoJuego()">
+
+	<h1>Juguemos Triqui</h1>	
+
+	<table id="tablero">
+		<tr>
+			<td id="0" onclick="juega(this.id)">.</td>
+			<td id="1" onclick="juega(this.id)">.</td>
+			<td id="2" onclick="juega(this.id)">.</td>
+		</tr>	
+
+		<tr>
+			<td id="3" onclick="juega(this.id)">.</td>
+			<td id="4" onclick="juega(this.id)">.</td>
+			<td id="5" onclick="juega(this.id)".></td>
+		</tr>
+
+		<tr>
+			<td id="6" onclick="juega(this.id)">.</td>
+			<td id="7" onclick="juega(this.id)">.</td>
+			<td id="8" onclick="juega(this.id)">.</td>
+		</tr>
+	</table>
+
+	<h3 id="estado" ">jugando ando</h3>
+
+	<button id="nuevo" onclick="nuevoJuego()">Nuevo Juego</button>
+
+	<hr/>
+	<h4>Reglas:</h4>
+	<p>Cada jugador solo debe colocar su símbolo una vez por turno y no debe ser sobre una casilla ya jugada. Se debe conseguir realizar una línea recta o diagonal por símbolo.</p>
+
+</body>
+</html>
